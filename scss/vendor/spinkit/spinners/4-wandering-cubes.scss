@@ -23,7 +23,7 @@ $spinkit-wandering-cube-css-export: true !default;
 ) {
   $distanceX: $width * 3/4;
   $distanceY: $height * 3/4;
-  $keyframeName: selector-replace("sk-wanderingCube-" + $width + "-" + $height, ".", "");
+  $keyframeName: "sk-wanderingCube-" + $width + "-" + $height;
   @keyframes #{$keyframeName} {
     0% {
       transform: rotate(0deg);
